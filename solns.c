@@ -15,7 +15,7 @@ int min (int numb[], int n)
   int minx=numb[0];
   for(int j=0;j<n;j++)
   {
-    if(numb[0]<minx)
+    if(minx>numb[i])
     minx=numb[j];
   }
   return(minx);
