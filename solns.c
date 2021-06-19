@@ -50,4 +50,30 @@ int mode(int nu[], int a)
   }
   return(maxvalue);
 }
+int factors(int n, int num[])
+{
+  int prime,k=0;
+  for(int i=2;i<n;i++)
+  {
+    if(n%i==0)
+    {
+      prime=1;
+      for(j=2;j<=(i/2);j++)
+      {
+        if(i%j==0)
+        {
+          prime=0;
+          break;
+        }
+      }
+      if(prime==1)
+      {
+        num[k]=i;
+        k++;
+      }
+      
+    }
+  }
+  return(k-1);
+}
 
