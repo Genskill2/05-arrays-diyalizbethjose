@@ -74,7 +74,7 @@ int factors(int n, int num[])
       
     }
   }
-  return(k);
+  return(k-1);
 }
 
 
