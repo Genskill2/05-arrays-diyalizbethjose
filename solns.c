@@ -20,4 +20,14 @@ int min (int numb[], int p)
   }
   return(minx);
 }
+float average(int numbs[], int q)
+{
+  float avg=0.0;
+  for(int k=0;k<q;k++)
+  {
+    avg+=numbs[i]
+  }
+  avg=avg/q;
+  return(avg);
+}
 
