@@ -53,27 +53,14 @@ int mode(int nu[], int a)
 int factors(int n, int num[])
 {
   int prime,k=0,p=0;
-  for(int i=2;i<n;i++)
+  for(int i=2;n>1;i++)
   {
-    if(n%i==0)
+    while(n % i==0)
     {
-      prime=1;
-      for(int j=2;j<=i/2;j++)
-      {
-        if(i % j==0)
-        {
-          prime=0;
-          break;
-        }
-      }
-      if(prime==1)
-      {
-        num[k]=i;
-        k++;
-        p++;
-        
-      }
-      
+     num[k]=i;
+      k++;
+      n=n/i;
+      p++;
     }
   }
   return(p);
