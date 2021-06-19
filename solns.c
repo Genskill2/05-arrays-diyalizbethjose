@@ -30,4 +30,24 @@ float average(int numbs[], int q)
   avg=avg/q;
   return(avg);
 }
+int mode(int nu[], int a)
+{
+  int maxvalue=0; 
+  int maxcount=0;
+  for(int i=0;i<a;i++)
+  {
+    int count=0;
+    for(int j=0;j<a;j++)
+    {
+      if(nu[j]==nu[i])
+        count++;
+    }
+    if(count>maxcount)
+    {
+      maxcount=count;
+      maxvalue=nu[i];
+    }
+  }
+  return(maxvalue);
+}
 
