@@ -52,7 +52,7 @@ int mode(int nu[], int a)
 }
 int factors(int n, int num[])
 {
-  int prime,k=0;
+  int prime,k=0,p=0;
   for(int i=2;i<n;i++)
   {
     if(n%i==0)
@@ -70,11 +70,13 @@ int factors(int n, int num[])
       {
         num[k]=i;
         k++;
+        p++;
+        
       }
       
     }
   }
-  return(k-1);
+  return(p);
 }
 
 
