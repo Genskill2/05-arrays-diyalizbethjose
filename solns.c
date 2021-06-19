@@ -25,7 +25,7 @@ float average(int numbs[], int q)
   float avg=0.0;
   for(int k=0;k<q;k++)
   {
-    avg+=numbs[i]
+    avg+=numbs[k];
   }
   avg=avg/q;
   return(avg);
