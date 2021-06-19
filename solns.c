@@ -10,12 +10,12 @@ int max (int number[], int n)
   }
   return(maxn);
 }
-int min (int numb[], int n)
+int min (int numb[], int p)
 {
   int minx=numb[0];
-  for(int j=0;j<n;j++)
+  for(int j=0;j<p;j++)
   {
-    if(minx>numb[i])
+    if(minx>numb[j])
     minx=numb[j];
   }
   return(minx);
